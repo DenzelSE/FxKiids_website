@@ -1,14 +1,12 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useToast } from "../../hooks/use-toast";
 import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
 import { Crown } from "lucide-react";
 
 const Navbar = () => {
   const location = useLocation();
-  const { toast } = useToast();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
